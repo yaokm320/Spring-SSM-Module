@@ -4,7 +4,9 @@
 
 
 <mapper namespace="com.example.ssm.dao.ItemMapper">
+
     <select id="findById" parameterType="int" resultType="Item">
         select * from item where id = #{id}
     </select>
+
 </mapper>

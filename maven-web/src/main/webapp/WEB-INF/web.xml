@@ -8,6 +8,7 @@
     <!--全局参数，指定Spring配置文件的位置-->
     <context-param>
         <param-name>contextConfigLocation</param-name>
+        <!--classpath*：指定可以在不同的jar包中搜寻配置文件-->
         <param-value>classpath*:applicationContext*.xml</param-value>
     </context-param>
 

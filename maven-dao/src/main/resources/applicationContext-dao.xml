@@ -19,7 +19,7 @@
         <property name="typeAliasesPackage" value="com.example.ssm.pojo"/>
     </bean>
 
-    <!--mapper扫描器，用于产生动态代理对象-->
+    <!--mapper扫描器，用于产生动态代理对象，要注意动态代理对象使用是JDK，因此类型只能是接口，而不能是实现类-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.example.ssm.dao"/>
     </bean>

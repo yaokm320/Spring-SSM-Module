@@ -10,7 +10,7 @@
 						   http://www.springframework.org/schema/tx
 						   http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <!--配置扫描器，扫描Service-->
+    <!--注解扫描-->
     <context:component-scan base-package="com.example.ssm.service.impl"/>
 
     <!--事务管理器-->
@@ -19,7 +19,7 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <!--事物注解驱动-->
+    <!--事务注解驱动 @Transactional-->
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
 </beans>
